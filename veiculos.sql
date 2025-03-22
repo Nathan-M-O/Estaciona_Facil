@@ -4,6 +4,7 @@ CREATE TABLE veiculos (
     placa VARCHAR(7) NOT NULL,                    
     marca VARCHAR(50),                           
     modelo VARCHAR(50),                           
-    cor VARCHAR(20),                              
+    cor VARCHAR(20),
+    tipo_veiculo VARCHAR(50),
     FOREIGN KEY (cod_cliente) REFERENCES clientes(cod_cliente) ON DELETE CASCADE
 );
